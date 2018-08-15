@@ -1,6 +1,6 @@
 DIR=.build
 LIB=lib
-PNX=./bin/c2h5oh_nginx
+PNX=/sbin/c2h5oh_nginx
 NX=$(DIR)/nginx/objs/nginx 
 NXO=$(DIR)/nginx/objs/addon/nginx_c2h5oh/*.o
 CMAKE=cmake ..
@@ -36,7 +36,6 @@ nginx_drop:
 
 $(PNX): compile
 	$(MAKE) -C $(DIR)/nginx
-	mkdir -p ./bin
 	cp -f $(NX) $(PNX)
 
 compile: 
