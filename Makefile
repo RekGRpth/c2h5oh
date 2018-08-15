@@ -35,7 +35,8 @@ nginx_drop:
 	rm -f $(PNX)
 
 $(PNX): compile
-	$(MAKE) -C $(DIR)/nginx 
+	$(MAKE) -C $(DIR)/nginx
+	mkdir -p ./bin
 	cp -f $(NX) $(PNX)
 
 compile: 
