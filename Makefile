@@ -23,11 +23,11 @@ drop: nginx_drop clean
 	rm -rdf ./$(DIR)
 	rm -f ./$(LIB)/*
 
-deb:
-	$(DIR)/deploy_c2h5oh.sh
+#deb:
+#	$(DIR)/deploy_c2h5oh.sh
 
-test:
-	$(MAKE) -C $(DIR) check
+#test:
+#	$(MAKE) -C $(DIR) check
 
 nginx_drop:
 	rm -rdf $(NXO)

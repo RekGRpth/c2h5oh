@@ -68,7 +68,7 @@ add_definitions(-DBOOST_ALL_DYN_LINK)
 #target_link_libraries(test-c2h5oh c2h5oh ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY})
 
 add_subdirectory(src/nginx)
-add_subdirectory(src/deb)
+#add_subdirectory(src/deb)
 
 #------------------------------------------------------------------------------
 #enable_testing()
