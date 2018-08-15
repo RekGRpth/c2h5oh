@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.2)
 
 find_package(ZLIB REQUIRED)
 
-set(NX_VER    nginx-1.8.0)
+set(NX_VER    nginx-1.9.10)
 set(NX_URL    http://nginx.org/download/${NX_VER}.tar.gz)
 set(NX_DBUILD ${CMAKE_SOURCE_DIR}/.build)
 set(NX_TAR    ${CMAKE_SOURCE_DIR}/deps/third-party/${NX_VER}.tar.gz)
