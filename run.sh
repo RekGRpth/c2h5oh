@@ -14,9 +14,9 @@ docker run \
     --hostname c2h5oh \
     --name c2h5oh \
     --restart always \
-    --volume /etc/certs/`hostname -d`.crt:/etc/c2h5oh_nginx/ssl/`hostname -d`.crt:ro \
-    --volume /etc/certs/`hostname -d`.key:/etc/c2h5oh_nginx/ssl/`hostname -d`.key:ro \
+    --volume /etc/certs/`hostname -d`.crt:/etc/c2h5oh_nginx/ssl/`hostname -d`.crt \
+    --volume /etc/certs/`hostname -d`.key:/etc/c2h5oh_nginx/ssl/`hostname -d`.key \
     --volume c2h5oh:/data/c2h5oh \
-    --volume /var/lib/docker/volumes/c2h5oh/_data/c2h5oh.conf:/etc/c2h5oh_nginx/conf.d/c2h5oh.conf:ro \
+    --volume /var/lib/docker/volumes/c2h5oh/_data/c2h5oh.conf:/etc/c2h5oh_nginx/conf.d/c2h5oh.conf \
     --volume /var/lib/docker/volumes/c2h5oh/_data/log:/var/log/nginx \
     rekgrpth/c2h5oh
